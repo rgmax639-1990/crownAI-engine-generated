@@ -1,0 +1,19 @@
+# Managed by Crown AI -- generated dependencies and build output are never committed
+node_modules/
+.next/
+dist/
+build/
+.expo/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.attachments/
+*.db
+*.sqlite
+*.sqlite3
+.coverage
+coverage/
+unit_report.xml
+*.log
+.env

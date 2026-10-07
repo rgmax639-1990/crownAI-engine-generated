@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+venv
+.venv
+.env
+.env.*
+.git
+node_modules
+.next
+*.db
+*.db-wal
+*.db-shm
+.coverage
+unit_report.xml
+.pytest_cache
+tests

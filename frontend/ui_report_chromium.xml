@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="123" time="486.595" timestamp="2026-10-07T12:20:05.009078+05:30" hostname="LAPTOP-KE1PHJQ1"><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_service_page_sign_in_offers_only_google_and_microsoft[chromium]" time="2.790" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_microsoft_option_starts_microsoft_oauth[chromium]" time="2.147" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_header_launch_leads_to_sign_in[chromium]" time="3.468" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_callback_lands_in_workspace_with_session[chromium]" time="3.359" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_callback_without_token_shows_error[chromium]" time="1.376" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_invalid_or_expired_token_returns_to_sign_in[chromium]" time="2.714" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_sign_out_ends_session[chromium]" time="3.338" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_live_oauth_login_redirects_to_provider[chromium]" time="6.311"><failure message="Failed: Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).">APIRequestContext.get: Timeout 5000ms exceeded.
+Call log:
+  - → GET http://127.0.0.1:8020/pricing/plans
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+
+
+During handling of the above exception, another exception occurred:
+Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_main_menu_reaches_every_section[chromium]" time="9.538" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_about_page_has_no_logo_showcase_and_new_legal_name[chromium]" time="0.977" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_type_scale_is_restrained_and_readable[chromium]" time="2.636" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_services_feature_crown_ai_as_flagship[chromium]" time="1.359" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_footer_shows_company_address_and_legal_pages[chromium]" time="3.891" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_mobile_menu_and_no_horizontal_scroll[chromium]" time="11.642" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_marketing_pages_load_under_2_5_seconds[chromium]" time="20.432" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_base_url_is_used_and_home_renders[chromium]" time="1.390" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_every_route_renders_without_runtime_errors[chromium]" time="22.366" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_unknown_route_is_branded_404[chromium]" time="5.045" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_live_backend_reachable_from_browser[chromium]" time="0.109"><failure message="Failed: Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).">Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_3_same_logo_on_site_and_crown_ai_tool[chromium]" time="4.753" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_3_brand_names_company_and_tool_together[chromium]" time="2.230" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_3_logo_link_returns_home_from_tool_pages[chromium]" time="3.313" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_create_project_generates_all_five_artifacts[chromium]" time="7.790"><failure message="AssertionError: Page URL expected to be 're.compile('/crown-ai/projects/[^/?]+')'&#10;Actual value: http://localhost:3020/crown-ai &#10;Call log:&#10;  - Expect &quot;to_have_url&quot; with timeout 5000ms&#10;    13 × locator resolved to &lt;html lang=&quot;en&quot;&gt;…&lt;/html&gt;&#10;       - unexpected value &quot;http://localhost:3020/crown-ai&quot;&#10;&#10;Aria snapshot:&#10;- link &quot;Skip to content&quot;:&#10;  - /url: &quot;#main&quot;&#10;- banner:&#10;  - link &quot;Crownwright home&quot;:&#10;    - /url: /&#10;  - navigation &quot;Main&quot;:&#10;    - link &quot;Home&quot;:&#10;      - /url: /&#10;    - link &quot;About Us&quot;:&#10;      - /url: /about&#10;    - link &quot;Services&quot;:&#10;      - /url: /services&#10;    - link &quot;Case Studies&quot;:&#10;      - /url: /case-studies&#10;    - link &quot;Blog&quot;:&#10;      - /url: /blog&#10;    - link &quot;Careers&quot;:&#10;      - /url: /careers&#10;    - link &quot;Team&quot;:&#10;      - /url: /team&#10;    - link &quot;Pricing&quot;:&#10;      - /url: /pricing&#10;    - link &quot;Contact&quot;:&#10;      - /url: /contact&#10;  - button &quot;Switch to dark theme&quot;&#10;  - link &quot;Launch Crown AI&quot;:&#10;    - /url: /crown-ai&#10;- main:&#10;  - paragraph: Crownwright&#10;  - paragraph: Crown AI Workspace&#10;  - text: Dev User · dev@example.com Free tier&#10;  - link &quot;Upgrade&quot;:&#10;    - /url: /pricing&#10;  - button &quot;Sign out&quot;&#10;  - complementary:&#10;    - heading &quot;New project&quot; [level=2]&#10;    - button &quot;Cancel&quot; [disabled]&#10;    - text: Project name&#10;    - textbox &quot;Project name&quot; [disabled]: Loyalty App&#10;    - text: Requirements / spec&#10;    - textbox &quot;Requirements / spec&quot; [disabled]:&#10;      - /placeholder: e.g. A customer loyalty points system for a retail app…&#10;      - text: A customer loyalty points system for a retail app.&#10;    - paragraph: 50 / 8,000&#10;    - button &quot;Generating…&quot; [disabled]&#10;    - status: Creating your project — all 5 stages will start generating automatically…&#10;    - paragraph:&#10;      - text: &quot;Free tier: up to 5 generations per day. Downloads need a&quot;&#10;      - link &quot;paid plan&quot;:&#10;        - /url: /pricing&#10;      - text: .&#10;    - heading &quot;Your data&quot; [level=2]&#10;    - paragraph:&#10;      - text: Delete single projects from the list, or erase your whole account and everything in it. See our&#10;      - link &quot;Privacy Policy&quot;:&#10;        - /url: /legal/privacy&#10;      - text: for your rights.&#10;    - button &quot;Delete my account&quot;&#10;  - region &quot;Your projects&quot;:&#10;    - heading &quot;Your projects&quot; [level=2]&#10;    - heading &quot;No projects yet&quot; [level=3]&#10;    - paragraph: Create your first project to generate requirements, design, code, test cases and NFR reports.&#10;- contentinfo:&#10;  - link &quot;Crownwright home&quot;:&#10;    - /url: /&#10;  - paragraph: Crownwright is the software delivery brand of Crownwright Technologies Pvt Ltd — premium engineering services and Crown AI, our SDLC/STLC automation tool.&#10;  - navigation &quot;Company&quot;:&#10;    - heading &quot;Company&quot; [level=2]&#10;    - list:&#10;      - listitem:&#10;        - link &quot;About Us&quot;:&#10;          - /url: /about&#10;      - listitem:&#10;        - link &quot;Team&quot;:&#10;          - /url: /team&#10;      - listitem:&#10;        - link &quot;Careers&quot;:&#10;          - /url: /careers&#10;      - listitem:&#10;        - link &quot;Case Studies&quot;:&#10;          - /url: /case-studies&#10;      - listitem:&#10;        - link &quot;Blog&quot;:&#10;          - /url: /blog&#10;  - navigation &quot;Product&quot;:&#10;    - heading &quot;Product&quot; [level=2]&#10;    - list:&#10;      - listitem:&#10;        - link &quot;Services&quot;:&#10;          - /url: /services&#10;      - listitem:&#10;        - link &quot;Crown AI&quot;:&#10;          - /url: /services/crown-ai&#10;      - listitem:&#10;        - link &quot;Crown AI Workspace&quot;:&#10;          - /url: /crown-ai&#10;      - listitem:&#10;        - link &quot;Pricing&quot;:&#10;          - /url: /pricing&#10;      - listitem:&#10;        - link &quot;Contact&quot;:&#10;          - /url: /contact&#10;  - navigation &quot;Legal&quot;:&#10;    - heading &quot;Legal&quot; [level=2]&#10;    - list:&#10;      - listitem:&#10;        - link &quot;Privacy Policy&quot;:&#10;          - /url: /legal/privacy&#10;      - listitem:&#10;        - link &quot;Terms of Service&quot;:&#10;          - /url: /legal/terms&#10;    - text: Crownwright Technologies Pvt Ltd Maraimalar Nagar, Chennai, Tamil Nadu, India&#10;  - paragraph: © 2026 Crownwright Technologies Pvt Ltd. Crownwright and Crown AI are brands of Crownwright Technologies Pvt Ltd. All rights reserved.&#10;- alert">page = &lt;Page url='http://localhost:3020/crown-ai'&gt;
+backend = &lt;test_ui_generated.FakeBackend object at 0x0000023270D0C050&gt;
+
+    def test_us_4_create_project_generates_all_five_artifacts(page: Page, backend: FakeBackend):
+        sign_in(page)
+        expect(page.get_by_text("No projects yet")).to_be_visible()
+        create_project(page, "Loyalty App", "A customer loyalty points system for a retail app.")
+&gt;       expect(page).to_have_url(re.compile(r"/crown-ai/projects/[^/?]+"))
+E       AssertionError: Page URL expected to be 're.compile('/crown-ai/projects/[^/?]+')'
+E       Actual value: http://localhost:3020/crown-ai 
+E       Call log:
+E         - Expect "to_have_url" with timeout 5000ms
+E           13 × locator resolved to &lt;html lang="en"&gt;…&lt;/html&gt;
+E              - unexpected value "http://localhost:3020/crown-ai"
+E       
+E       Aria snapshot:
+E       - link "Skip to content":
+E         - /url: "#main"
+E       - banner:
+E         - link "Crownwright home":
+E           - /url: /
+E         - navigation "Main":
+E           - link "Home":
+E             - /url: /
+E           - link "About Us":
+E             - /url: /about
+E           - link "Services":
+E             - /url: /services
+E           - link "Case Studies":
+E             - /url: /case-studies
+E           - link "Blog":
+E             - /url: /blog
+E           - link "Careers":
+E             - /url: /careers
+E           - link "Team":
+E             - /url: /team
+E           - link "Pricing":
+E             - /url: /pricing
+E           - link "Contact":
+E             - /url: /contact
+E         - button "Switch to dark theme"
+E         - link "Launch Crown AI":
+E           - /url: /crown-ai
+E       - main:
+E         - paragraph: Crownwright
+E         - paragraph: Crown AI Workspace
+E         - text: Dev User · dev@example.com Free tier
+E         - link "Upgrade":
+E           - /url: /pricing
+E         - button "Sign out"
+E         - complementary:
+E           - heading "New project" [level=2]
+E           - button "Cancel" [disabled]
+E           - text: Project name
+E           - textbox "Project name" [disabled]: Loyalty App
+E           - text: Requirements / spec
+E           - textbox "Requirements / spec" [disabled]:
+E             - /placeholder: e.g. A customer loyalty points system for a retail app…
+E             - text: A customer loyalty points system for a retail app.
+E           - paragraph: 50 / 8,000
+E           - button "Generating…" [disabled]
+E           - status: Creating your project — all 5 stages will start generating automatically…
+E           - paragraph:
+E             - text: "Free tier: up to 5 generations per day. Downloads need a"
+E             - link "paid plan":
+E               - /url: /pricing
+E             - text: .
+E           - heading "Your data" [level=2]
+E           - paragraph:
+E             - text: Delete single projects from the list, or erase your whole account and everything in it. See our
+E             - link "Privacy Policy":
+E               - /url: /legal/privacy
+E             - text: for your rights.
+E           - button "Delete my account"
+E         - region "Your projects":
+E           - heading "Your projects" [level=2]
+E           - heading "No projects yet" [level=3]
+E           - paragraph: Create your first project to generate requirements, design, code, test cases and NFR reports.
+E       - contentinfo:
+E         - link "Crownwright home":
+E           - /url: /
+E         - paragraph: Crownwright is the software delivery brand of Crownwright Technologies Pvt Ltd — premium engineering services and Crown AI, our SDLC/STLC automation tool.
+E         - navigation "Company":
+E           - heading "Company" [level=2]
+E           - list:
+E             - listitem:
+E               - link "About Us":
+E                 - /url: /about
+E             - listitem:
+E               - link "Team":
+E                 - /url: /team
+E             - listitem:
+E               - link "Careers":
+E                 - /url: /careers
+E             - listitem:
+E               - link "Case Studies":
+E                 - /url: /case-studies
+E             - listitem:
+E               - link "Blog":
+E                 - /url: /blog
+E         - navigation "Product":
+E           - heading "Product" [level=2]
+E           - list:
+E             - listitem:
+E               - link "Services":
+E                 - /url: /services
+E             - listitem:
+E               - link "Crown AI":
+E                 - /url: /services/crown-ai
+E             - listitem:
+E               - link "Crown AI Workspace":
+E                 - /url: /crown-ai
+E             - listitem:
+E               - link "Pricing":
+E                 - /url: /pricing
+E             - listitem:
+E               - link "Contact":
+E                 - /url: /contact
+E         - navigation "Legal":
+E           - heading "Legal" [level=2]
+E           - list:
+E             - listitem:
+E               - link "Privacy Policy":
+E                 - /url: /legal/privacy
+E             - listitem:
+E               - link "Terms of Service":
+E                 - /url: /legal/terms
+E           - text: Crownwright Technologies Pvt Ltd Maraimalar Nagar, Chennai, Tamil Nadu, India
+E         - paragraph: © 2026 Crownwright Technologies Pvt Ltd. Crownwright and Crown AI are brands of Crownwright Technologies Pvt Ltd. All rights reserved.
+E       - alert
+
+tests\test_ui_generated.py:803: AssertionError</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_progress_shows_within_3_seconds[chromium]" time="11.013" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_create_form_validation_and_double_submit[chromium]" time="3.577" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_create_project_server_error_is_shown[chromium]" time="1.916" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_stage_failure_stops_pipeline_and_can_resume[chromium]" time="6.732" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_manual_stage_by_stage_generation[chromium]" time="7.840" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_project_access_rules[chromium]" time="4.419" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_workspace_load_error_and_retry[chromium]" time="1.504" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_workspace_shows_loading_state[chromium]" time="1.425" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_free_tier_download_from_project_redirects_to_pricing[chromium]" time="3.808" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_free_tier_download_from_workspace_list_redirects[chromium]" time="3.051" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_free_tier_can_still_generate_code[chromium]" time="3.604" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_daily_cap_shows_limit_and_link_to_pricing[chromium]" time="5.258" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_offsite_upgrade_url_is_not_followed[chromium]" time="4.219" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_5_workspace_upgrade_link_goes_to_pricing[chromium]" time="2.413" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_lead_form_must_be_submitted_before_payment[chromium]" time="2.403" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_lead_form_validates_every_field[chromium]" time="2.697" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_lead_save_error_keeps_user_on_form[chromium]" time="2.236" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_closing_form_cancels_upgrade[chromium]" time="2.399" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_pricing_has_no_free_plan_card[chromium]" time="1.708" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_submitting_state_disables_form[chromium]" time="2.414" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_live_lead_capture_reaches_backend[chromium]" time="0.120"><failure message="Failed: Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).">Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_pricing_shows_paid_plans_and_hosted_secure_payment[chromium]" time="1.904" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_signed_in_purchase_goes_to_stripe_with_session[chromium]" time="3.373" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_checkout_failure_keeps_lead_and_retry_succeeds[chromium]" time="2.653" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_checkout_resumes_after_sign_in[chromium]" time="3.504" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_return_from_checkout_messages[chromium]" time="6.347" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_checkout_error_param_is_rendered_as_text[chromium]" time="2.591" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_upgraded_account_can_download[chromium]" time="1.543" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_upgrade_still_possible_when_pricing_api_down[chromium]" time="4.727" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_live_pricing_plans_load_from_backend[chromium]" time="0.106"><failure message="Failed: Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).">Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_india_visitor_gets_dpdp_banner[chromium]" time="1.750" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_eu_visitor_gets_gdpr_opt_in_and_reject_is_remembered[chromium]" time="3.541" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_us_visitor_gets_ccpa_notice_and_accept_persists[chromium]" time="3.869" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_other_region_gets_generic_notice[chromium]" time="1.273" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_india_detected_from_time_zone_and_sent_to_api[chromium]" time="1.255" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_8_banner_shows_on_crown_ai_tool_too[chromium]" time="1.166" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_contact_form_submits_inquiry[chromium]" time="1.836" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_contact_form_validation[chromium]" time="2.407" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_contact_server_errors_keep_message[chromium]" time="2.172" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_map_failure_shows_error_not_blank[chromium]" time="1.253" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_live_contact_submission_is_captured[chromium]" time="0.108"><failure message="Failed: Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).">Live backend not reachable from the browser (APIRequestContext.get: Timeout 5000ms exceeded.). Start the API at the address the frontend was built with (NEXT_PUBLIC_API_BASE, default http://127.0.0.1:8000).</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_delete_project_with_confirmation[chromium]" time="3.347" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_deleting_last_project_shows_empty_state[chromium]" time="1.761" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_delete_failure_keeps_project[chromium]" time="1.709" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_deleted_project_url_is_not_found[chromium]" time="2.994" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_delete_account_erases_everything[chromium]" time="2.915" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_11_blog_lists_published_articles[chromium]" time="1.077" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_11_careers_lists_open_jobs_with_apply[chromium]" time="1.277" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_11_blog_and_careers_on_mobile[chromium]" time="1.468" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_studies_list_featured_clients[chromium]" time="0.963" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_study_detail_shows_story_and_sample_output[chromium]" time="4.695" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_unknown_case_study_is_not_found[chromium]" time="1.097" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_study_on_mobile[chromium]" time="1.504" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_slow_mouse_click_on_submit_from_autofocused_name_submits[chromium]" time="1.960" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_blurring_untouched_fields_shows_no_errors[chromium]" time="1.701" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_editing_then_clearing_a_field_shows_inline_error[chromium]" time="1.794" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_missing_requirements_only_focuses_requirements[chromium]" time="1.764" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_first_click_after_typing_submits_and_trims_input[chromium]" time="2.620" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_enter_key_submits_create_form[chromium]" time="2.784" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_create_form_on_mobile_submits_with_tap_target_stable[chromium]" time="1.670" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_study_links_have_exact_accessible_names[chromium]" time="1.118" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_study_link_works_with_keyboard[chromium]" time="1.305" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_12_case_study_links_named_on_mobile[chromium]" time="1.563" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_tailwind_utilities_and_design_system_compile[chromium]" time="1.103" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_tailwind_responsive_variants_collapse_on_mobile[chromium]" time="0.906" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_tailwind_button_and_form_styles_in_workspace[chromium]" time="1.495" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_first_request_to_home_finishes_compiling[chromium]" time="1.089" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_tool_routes_start_without_errors[chromium]" time="4.843" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_project_detail_load_generate_download_use_route_id[chromium]" time="5.361" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_autogenerate_after_create_targets_new_project[chromium]" time="5.687" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_switching_between_projects_shows_each_projects_data[chromium]" time="3.911" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_project_load_error_retry_reuses_route_id[chromium]" time="2.685" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_7_paid_download_from_project_page_uses_route_id[chromium]" time="2.720" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_10_unknown_project_id_after_deep_link_is_not_found[chromium]" time="2.736" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_tailwind_arbitrary_values_and_breakpoints_compile[chromium]" time="1.500" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_stylesheets_are_served_and_compiled[chromium]" time="1.791"><failure message="AssertionError: '.btn-primary' styles missing on pricing: none&#10;assert 'gradient' in 'none'">page = &lt;Page url='http://localhost:3020/pricing'&gt;
+backend = &lt;test_ui_generated.FakeBackend object at 0x000002326E891D00&gt;
+
+    def test_us_2_stylesheets_are_served_and_compiled(page: Page, backend: FakeBackend):
+        failed = []
+        page.on("response", lambda r: failed.append(f"{r.url} -&gt; {r.status}")
+                if r.request.resource_type == "stylesheet" and r.status &gt;= 400 else None)
+        goto(page, "/pricing", wait_until="load")
+        sheets = page.evaluate("() =&gt; document.styleSheets.length")
+        assert sheets &gt; 0, "No stylesheets loaded"
+        assert not failed, f"Stylesheets failed to load: {failed}"
+        bg = page.get_by_role("button", name="Upgrade to Mid").evaluate("el =&gt; getComputedStyle(el).backgroundImage")
+&gt;       assert "gradient" in bg, f"'.btn-primary' styles missing on pricing: {bg}"
+E       AssertionError: '.btn-primary' styles missing on pricing: none
+E       assert 'gradient' in 'none'
+
+tests\test_ui_generated.py:1913: AssertionError</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_mobile_menu_toggle_disabled_until_hydrated[chromium]" time="1.605" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_mobile_menu_opens_on_first_tap_right_after_load[chromium]" time="5.452" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_mobile_menu_close_and_reopen[chromium]" time="1.451" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_mobile_menu_every_link_navigates_and_closes[chromium]" time="5.593" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_1_mobile_menu_launch_crown_ai_reaches_sign_in[chromium]" time="1.614" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_menu_toggle_by_breakpoint[chromium]" time="7.921" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_generate_project_button_does_not_lift_on_hover[chromium]" time="4.558" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_slow_click_with_valid_form_creates_once[chromium]" time="5.319" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_click_near_bottom_edge_of_submit_still_submits[chromium]" time="6.122" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_4_project_page_primary_buttons_stay_put_on_hover[chromium]" time="6.128" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_6_upgrade_buttons_stay_put_on_hover_and_slow_click_opens_form[chromium]" time="4.999" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_9_send_message_button_stays_put_on_hover[chromium]" time="1.901" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_3_header_launch_button_stays_put_on_hover[chromium]" time="3.593" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_served_css_is_compiled_not_raw[chromium]" time="4.172" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_shim_file_is_not_served[chromium]" time="0.635" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_utilities_win_over_component_classes[chromium]" time="1.215" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_config_theme_tokens_reach_utilities[chromium]" time="1.130" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_dark_theme_tokens_follow_through[chromium]" time="1.831" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_hover_variant_compiles[chromium]" time="2.370" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_arbitrary_grid_template_by_breakpoint[chromium]" time="2.802" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_keyframes_and_reduced_motion[chromium]" time="1.394" /><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_shim_removed_every_route_is_styled[chromium]" time="19.138"><failure message="AssertionError: Pages rendered without compiled Tailwind styles: /crown-ai: {'container': '1152px', 'h1Weight': None, 'bodyDisplay': 'flex', 'footerBg': 'rgb(255, 250, 235)'}&#10;assert not [&quot;/crown-ai: {'container': '1152px', 'h1Weight': None, 'bodyDisplay': 'flex', 'footerBg': 'rgb(255, 250, 235)'}&quot;]">page = &lt;Page url='http://localhost:3020/case-studies/regional-nbfc-chennai'&gt;
+backend = &lt;test_ui_generated.FakeBackend object at 0x0000023271068380&gt;
+
+    def test_us_2_shim_removed_every_route_is_styled(page: Page, backend: FakeBackend):
+        page.emulate_media(color_scheme="light")
+        page.set_viewport_size({"width": 1440, "height": 900})
+        bad_css = []
+        page.on("response", lambda r: bad_css.append(f"{r.url} -&gt; {r.status}")
+                if r.request.resource_type == "stylesheet" and r.status &gt;= 400 else None)
+        problems = []
+        for path in list(PAGES) + ["/crown-ai", "/case-studies/regional-nbfc-chennai"]:
+            goto(page, path, wait_until="load")
+            expect(page.locator("[data-nextjs-dialog], [data-nextjs-error-overlay]")).to_have_count(0)
+            expect(page.get_by_text(re.compile(r"Cannot find module '@tailwindcss/postcss'|Failed to compile"))).to_have_count(0)
+            got = page.evaluate(
+                """() =&gt; {
+                    const c = document.querySelector('.container-page');
+                    const h1 = document.querySelector('h1');
+                    return {
+                        container: c ? getComputedStyle(c).maxWidth : null,
+                        h1Weight: h1 ? getComputedStyle(h1).fontWeight : null,
+                        bodyDisplay: getComputedStyle(document.body).display,
+                        footerBg: getComputedStyle(document.querySelector('footer')).backgroundColor,
+                    };
+                }"""
+            )
+            want = {"container": "1152px", "h1Weight": "700", "bodyDisplay": "flex", "footerBg": LIGHT["subtle"]}
+            if got != want:
+                problems.append(f"{path}: {got}")
+        assert not bad_css, f"Stylesheets failed to load: {bad_css}"
+&gt;       assert not problems, "Pages rendered without compiled Tailwind styles: " + "; ".join(problems)
+E       AssertionError: Pages rendered without compiled Tailwind styles: /crown-ai: {'container': '1152px', 'h1Weight': None, 'bodyDisplay': 'flex', 'footerBg': 'rgb(255, 250, 235)'}
+E       assert not ["/crown-ai: {'container': '1152px', 'h1Weight': None, 'bodyDisplay': 'flex', 'footerBg': 'rgb(255, 250, 235)'}"]
+
+tests\test_ui_generated.py:2293: AssertionError</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_3_shim_removed_brand_gold_styles_on_site_and_tool[chromium]" time="4.426"><failure message="AssertionError: Brand gold gradient differs between site and Crown AI tool: 'none' vs 'linear-gradient(135deg, rgb(252, 211, 77) 0%, rgb(234, 179, 8) 50%, rgb(217, 119, 6) 100%)'&#10;assert ('gradient' in 'none')">page = &lt;Page url='http://localhost:3020/crown-ai'&gt;
+backend = &lt;test_ui_generated.FakeBackend object at 0x0000023270FAB020&gt;
+
+    def test_us_3_shim_removed_brand_gold_styles_on_site_and_tool(page: Page, backend: FakeBackend):
+        page.emulate_media(color_scheme="light")
+        goto(page, "/pricing", wait_until="load")
+        site_button = page.get_by_role("button", name="Upgrade to Mid")
+        site_bg = css_of(site_button, "backgroundImage")
+        sign_in(page)
+        page.get_by_role("button", name="+ New Project").click()
+        tool_bg = css_of(page.get_by_role("button", name="Generate Project"), "backgroundImage")
+&gt;       assert "gradient" in site_bg and site_bg == tool_bg, (
+            f"Brand gold gradient differs between site and Crown AI tool: {site_bg!r} vs {tool_bg!r}")
+E       AssertionError: Brand gold gradient differs between site and Crown AI tool: 'none' vs 'linear-gradient(135deg, rgb(252, 211, 77) 0%, rgb(234, 179, 8) 50%, rgb(217, 119, 6) 100%)'
+E       assert ('gradient' in 'none')
+
+tests\test_ui_generated.py:2304: AssertionError</failure></testcase><testcase classname="asr_core.data.projects.3.repo.frontend.tests.test_ui_generated" name="test_us_2_suite_every_story_has_ui_tests" time="65.231" /></testsuite></testsuites>

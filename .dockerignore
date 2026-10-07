@@ -1,0 +1,9 @@
+node_modules
+__pycache__
+.git
+.next
+venv
+.env
+.env.*
+*.pyc
+backend/crownai.db

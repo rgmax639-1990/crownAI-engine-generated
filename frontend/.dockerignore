@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+__pycache__
+venv
+.env
+.env.*
+tests
+ui_report_chromium.xml
