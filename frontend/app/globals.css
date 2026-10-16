@@ -1,0 +1,250 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/*
+ * Design system: every colour, spacing step, type size, radius and shadow is defined once
+ * here as a CSS variable. Components use them through Tailwind utilities (bg-surface,
+ * text-fg-muted, rounded-lg, shadow-md...). The dark theme follows prefers-color-scheme
+ * unless the visitor picks one explicitly (html[data-theme]). Senior mode (html.senior)
+ * enlarges the whole type scale and the minimum touch target.
+ */
+:root {
+  color-scheme: light;
+
+  /* colour tokens: light theme (all text pairs meet WCAG AA) */
+  --color-bg: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #eef1f7;
+  --color-surface-3: #e2e7f0;
+  --color-border: #d3d9e4;
+  --color-border-strong: #8d97ab;
+  --color-text: #0f172a;
+  --color-text-muted: #475467;
+  --color-text-subtle: #5b6475;
+  --color-primary: #1b3a7a;
+  --color-primary-hover: #142d61;
+  --color-primary-fg: #ffffff;
+  --color-primary-soft: #e5ecfa;
+  --color-accent: #c79a2e;
+  --color-accent-fg: #1c1404;
+  --color-accent-soft: #fbf3df;
+  --color-success: #047857;
+  --color-success-soft: #e2f5ec;
+  --color-warning: #a34b05;
+  --color-warning-soft: #fdf0de;
+  --color-danger: #b42318;
+  --color-danger-hover: #912018;
+  --color-danger-fg: #ffffff;
+  --color-danger-soft: #fdeceb;
+  --color-info: #1d4ed8;
+  --color-info-soft: #e6edfd;
+  --color-focus: #2563eb;
+  --color-overlay: rgb(15 23 42 / 0.55);
+
+  /* spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --page-gutter: 1rem;
+  --page-max: 80rem;
+  --tap-min: 44px;
+
+  /* type scale */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", "Nirmala UI", Mangal, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* radius & elevation */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06), 0 1px 1px rgb(15 23 42 / 0.04);
+  --shadow-md: 0 4px 12px rgb(15 23 42 / 0.08), 0 2px 4px rgb(15 23 42 / 0.05);
+  --shadow-lg: 0 18px 40px rgb(15 23 42 / 0.16), 0 6px 12px rgb(15 23 42 / 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #0a1120;
+    --color-surface: #111a2d;
+    --color-surface-2: #172239;
+    --color-surface-3: #1f2c47;
+    --color-border: #2b3856;
+    --color-border-strong: #5a6a8c;
+    --color-text: #e9edf5;
+    --color-text-muted: #b0bacd;
+    --color-text-subtle: #97a3b9;
+    --color-primary: #93b1ff;
+    --color-primary-hover: #b0c6ff;
+    --color-primary-fg: #0a1120;
+    --color-primary-soft: #1a2950;
+    --color-accent: #e3bb55;
+    --color-accent-fg: #1c1404;
+    --color-accent-soft: #382c10;
+    --color-success: #4cd39b;
+    --color-success-soft: #0f2e24;
+    --color-warning: #f5b94a;
+    --color-warning-soft: #36270c;
+    --color-danger: #ff8a80;
+    --color-danger-hover: #ffaaa2;
+    --color-danger-fg: #1f0806;
+    --color-danger-soft: #3a1512;
+    --color-info: #8fb0ff;
+    --color-info-soft: #16244a;
+    --color-focus: #9dbaff;
+    --color-overlay: rgb(0 0 0 / 0.65);
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 4px 12px rgb(0 0 0 / 0.45);
+    --shadow-lg: 0 18px 40px rgb(0 0 0 / 0.55);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0a1120;
+  --color-surface: #111a2d;
+  --color-surface-2: #172239;
+  --color-surface-3: #1f2c47;
+  --color-border: #2b3856;
+  --color-border-strong: #5a6a8c;
+  --color-text: #e9edf5;
+  --color-text-muted: #b0bacd;
+  --color-text-subtle: #97a3b9;
+  --color-primary: #93b1ff;
+  --color-primary-hover: #b0c6ff;
+  --color-primary-fg: #0a1120;
+  --color-primary-soft: #1a2950;
+  --color-accent: #e3bb55;
+  --color-accent-fg: #1c1404;
+  --color-accent-soft: #382c10;
+  --color-success: #4cd39b;
+  --color-success-soft: #0f2e24;
+  --color-warning: #f5b94a;
+  --color-warning-soft: #36270c;
+  --color-danger: #ff8a80;
+  --color-danger-hover: #ffaaa2;
+  --color-danger-fg: #1f0806;
+  --color-danger-soft: #3a1512;
+  --color-info: #8fb0ff;
+  --color-info-soft: #16244a;
+  --color-focus: #9dbaff;
+  --color-overlay: rgb(0 0 0 / 0.65);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 18px 40px rgb(0 0 0 / 0.55);
+}
+
+/* Senior-citizen mode: larger type everywhere (rem-based) and larger touch targets. */
+:root.senior {
+  font-size: 118.75%;
+  --tap-min: 52px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-gutter: 1.5rem;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus on every interactive element. */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-primary-soft);
+  color: var(--color-text);
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -100px;
+  z-index: 100;
+  background: var(--color-primary);
+  color: var(--color-primary-fg);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.page-container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Native range sliders themed with tokens. */
+input[type="range"] {
+  accent-color: var(--color-primary);
+  min-height: var(--tap-min);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      - APP_ENV=dev
+      - ASR_DATA_DIR=/data
+    volumes:
+      - backend-data:/data
+
+  frontend:
+    build: ./frontend
+    ports: ["3000:3000"]
+    environment: [NEXT_PUBLIC_API_BASE=http://backend:8000]
+    depends_on: [backend]
+
+volumes:
+  backend-data:
